@@ -1,12 +1,53 @@
+@font-face {
+	font-family: "playfairDisplayBold";
+	src:url("../fonts/PlayfairDisplay-Bold.otf");
+}
+@font-face {
+	font-family: "playfairDisplayBoldItalic";
+	src:url("../fonts/PlayfairDisplay-BoldItalic.otf");
+}
+@font-face {
+	font-family: "playfairDisplayItalic";
+	src:url("../fonts/PlayfairDisplay-Italic.otf");
+}
+@font-face {
+	font-family: "playfairDisplay";
+	src:url("../fonts/PlayfairDisplay-Regular.otf");
+}
+@font-face {
+	font-family: "ralewayLight";
+	src:url("../fonts/Raleway-Light.ttf");
+}
+@font-face {
+	font-family: "ralewayLightItalic";
+	src:url("../fonts/Raleway-LightItalic.ttf");
+}
+@font-face {
+	font-family: "ralewayMedium";
+	src:url("../fonts/Raleway-Medium.ttf");
+}
+@font-face {
+	font-family: "ralewayMediumItalic";
+	src:url("../fonts/Raleway-MediumItalic.ttf");
+}
+
 header{
+	padding:10px 40px;
 	display: flex;
 	color: red;
 	font-size: 16px;
+	font-family: "ralewayMedium"; 
 	justify-content: space-between;
 	align-items: center;
 }
+body {
+	margin: 0;
+}
 header ul {
 	list-style: none;
+}
+header .nav {
+	transform: translateX(-25%);
 }
 header .nav ul {
 	padding-left: 0px;
@@ -18,4 +59,41 @@ header .nav ul {
 
 header .nav ul li {
 	padding: 0px 10px;
+}
+
+#collection-banner {
+	background-image: url("../images/flower-bkgd.jpg");
+	background-size: contain;
+	background-repeat-y: no-repeat;
+	max-height: 775px;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+#collection-banner img {
+	padding-top: 45px;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "playfairDisplay";
+	width: 100%;
+}
+
+.banner-text-top {
+	font-size: 30px;
+}
+
+.banner-text-bottom {
+	font-size: 80px;
+	padding-top: 30px;
 }
