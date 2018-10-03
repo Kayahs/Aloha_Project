@@ -32,7 +32,7 @@
 }
 
 header{
-	padding:10px 40px;
+	padding:20px 40px;
 	display: flex;
 	color: red;
 	font-size: 16px;
@@ -47,7 +47,7 @@ header ul {
 	list-style: none;
 }
 header .nav {
-	transform: translateX(-25%);
+	transform: translateX(-18%);
 }
 header .nav ul {
 	padding-left: 0px;
@@ -96,4 +96,36 @@ header .nav ul li {
 .banner-text-bottom {
 	font-size: 80px;
 	padding-top: 30px;
+}
+
+#about-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 75px 0px;
+}
+
+#about-banner-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 50px;
+}
+#about-banner-title span:first-child {
+	font-family: "playfairDisplayItalic";
+	padding-right: 20px;
+}
+#about-banner-title span:last-child {
+	font-family: "playfairDisplayBold";
+}
+#about-banner-text {
+	padding-top: 30px;
+	line-height: 45px;
+	max-width: 75%;
+	margin:auto;
+	text-align: center;
+	font-size: 25px;
+	font-family: "ralewayLight";
 }
