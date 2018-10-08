@@ -2,6 +2,10 @@
   <head>
   	<title>Aloha Apparel Company</title>
   	<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
+<link rel="stylesheet" href="css/flickity.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <header>
   	<div class="logo">
@@ -28,7 +32,7 @@
   		</div>
   	</div>
   	<div id="about-banner">
-  		<div id="about-banner-title">
+  		<div class="multi-font-title">
   			<span>Hand-Crafted</span>
   			<span>Styles</span>
   		</div>
@@ -36,5 +40,147 @@
   			Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.
   		</span>
   	</div>
+  	<div id="category-gallery">
+  		<div id="gallery-top">
+  			<div id="gallery-img-one">
+  				<span class="img-text">MEN'S</span>
+  				<img class="big-img" src="images/mens-category.jpg">
+  			</div>
+			<div id="gallery-img-two">
+				<span class="img-text">TRENDS</span>
+				<img class="small-img" src="images/trends-category.jpg">
+			</div>
+			<div id="gallery-img-three">
+	  			<span class="img-text">GLASSES</span>
+	  			<img class="small-img" src="images/glasses-category.jpg">
+  			</div>
+  		</div>
+  		<div id="gallery-bottom">
+  			<div id="gallery-img-four">
+	  			<span class="img-text">SALE</span>
+	  			<img class="small-img" src="images/sale-category.jpg">
+	  		</div>
+	  		<div id="gallery-img-five">
+	  			<span class="img-text">BAGS</span>
+	  			<img class="small-img" src="images/bags-category.jpg">
+	  		</div>
+	  		<div id="gallery-img-six">
+	  			<span class="img-text">WOMEN'S</span>
+	  			<img class="big-img" src="images/womens-category.jpg">
+	  		</div>
+  		</div>
+  		<div id="carousel-container">
+  			<div id="carousel-title" class="multi-font-title">
+  				<span>Most-Loved</span>
+  				<span>Products</span>
+  			</div>
+  			<div class="main-carousel">
+  				<div class="carousel-cell">
+  					<img src="images/blue-hipster-backpack.jpg">
+	  				<span class="carousel-category">BAGS</span>
+	  				<span class="carousel-item-name">Blue Hipster Backpack</span>
+	  				<span class="carousel-price">$69.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+  				</div>
+  				<div class="carousel-cell">
+  					<img src="images/blue-silk-dress.jpg">
+	  				<span class="carousel-category">DRESSES</span>
+	  				<span class="carousel-item-name">Blue Silk Dress</span>
+	  				<span class="carousel-price">$169.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+  				</div>
+  				<div class="carousel-cell">
+  					<img src="images/checked-stretch-dress.jpg">
+  					<span class="carousel-category">DRESSES</span>
+	  				<span class="carousel-item-name">Checked Stretch Dress</span>
+	  				<span class="carousel-price">$129.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+  				</div>
+  				<div class="carousel-cell">
+  					<img src="images/cotton-blue-shirt.jpg">
+  					<span class="carousel-category">SHIRTS</span>
+	  				<span class="carousel-item-name">Cotton Blue Shirt</span>
+	  				<span class="carousel-price">$69.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+  				</div>
+  				<div class="carousel-cell">
+  					<img src="images/cotton-yellow-tshirt.jpg">
+  					<span class="carousel-category">BAGS</span>
+	  				<span class="carousel-item-name">Blue Hipster Backpack</span>
+	  				<span class="carousel-price">$69.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+  				</div>
+  				<div class="carousel-cell">
+  					<img src="images/demin-overall-shorts.jpg">
+  					<span class="carousel-category">BAGS</span>
+	  				<span class="carousel-item-name">Blue Hipster Backpack</span>
+	  				<span class="carousel-price">$69.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+	  			</div>
+  				<div class="carousel-cell">
+  					<img src="images/pink-dotted-dress.jpg">
+  					<span class="carousel-category">BAGS</span>
+	  				<span class="carousel-item-name">Blue Hipster Backpack</span>
+	  				<span class="carousel-price">$69.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+	  			</div>
+  				<div class="carousel-cell">
+  					<img src="images/stretch-knit-dress.jpg">
+  					<span class="carousel-category">BAGS</span>
+	  				<span class="carousel-item-name">Blue Hipster Backpack</span>
+	  				<span class="carousel-price">$69.00</span>
+	  				<a class="carousel-add-to-cart">Add to Cart</a>
+	  			</div>
+  			</div>
+  		</div>
+  	</div>
+	<div id="contact-container">
+		
+		<div id="contact-section">
+			<div class="multi-font-title">
+				<span>Sign-up for</span>
+				<span>Updates</span>
+			</div>
+			<div class="contact-text">
+				<span>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</span>
+			</div>
+			<div id="form-container">
+				<form id="contact-form" name="cform" action="submit.php" method="POST">
+					<input type="email" placeholder="Your Email" required />
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-left">
+			<div class="copyright">
+				<span><i class="fa fa-copyright"></i> 2016 Aloha Apparel Co.</span>
+				<br>
+				<span>Powered by HTML and CSS.</span>
+			</div>
+			<div class="contact-info">
+				<span>604-604-6040. <a>info@alohaapparel.com</a></span>
+			</div>
+			<div class="address">
+				<span>1490 W Broadway</span>
+				<br>
+				<span>Vancouver, BC, Canada</span>
+			</div>
+		</div>
+		<div class="footer-right">
+			<div class="social-links">
+				<div><i class="fa fa-facebook"></i><span>Facebook</span></div>
+				<div><i class="fa fa-twitter"></i><span>Twitter</span></div>
+				<div><i class="fa fa-instagram"></i><span>Instagram</span></div>
+				<div><i class="fa fa-pinterest"></i><span>Pinterest</span></div>
+				<div><i class="fa fa-google-plus"></i><span>Google+</span></div>
+			</div>
+		</div>
+	</f`ooter>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+
+	<script src="js/script.js"></script>
   </body>
 </html>
