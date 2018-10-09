@@ -69,6 +69,19 @@ header .nav ul li {
 	padding: 0px 10px;
 }
 
+header .cart {
+	position: relative;
+}
+header .cart #cart-item-count {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: white;
+	background-color: red;
+	padding: 0 5px;
+	border-radius: 20px;
+}
+
 /* Collection Banner Styles */
 
 #collection-banner {
@@ -267,11 +280,15 @@ header .nav ul li {
 	max-width: 50%;
 }
 
+#contact-section .multi-font-title {
+	padding-top: 70px;
+}
+
 .contact-text {
 	font-family: "ralewayLight";
-	font-size: 30px;
+	font-size: 25px;
 	padding: 30px 0;
-	line-height: 50px;
+	line-height: 40px;
 }
 
 #contact-form {
@@ -316,6 +333,7 @@ footer {
 	color: white;
 	background-color: black;
 	padding: 50px;
+	margin-top: 10px;
 }
 
 footer .footer-left {
@@ -325,6 +343,27 @@ footer .footer-left {
 footer .footer-right {
 	font-family: "ralewayLight";
 }
+footer .footer-right .social-links * {
+	padding-bottom: 10px;
+}
+
+footer .footer-right .social-links div {
+	display: flex;
+	justify-content: flex-start;
+}
+footer .footer-right .social-links div .fa {
+	padding-right: 10px;
+	width: 30px;
+}
+
 footer .footer-left .contact-info {
 	padding: 30px 0;
+}
+
+footer .footer-left .contact-info a {
+	color: white;
+}
+
+footer .footer-left .address {
+	color: #696969;
 }
