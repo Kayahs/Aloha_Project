@@ -78,8 +78,12 @@ header .cart #cart-item-count {
 	right: 0;
 	color: white;
 	background-color: red;
-	padding: 0 5px;
-	border-radius: 20px;
+	padding: 2px 6px;
+	border-radius: 50%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-family: "ralewayMedium";
 }
 
 /* Collection Banner Styles */
@@ -170,12 +174,9 @@ header .cart #cart-item-count {
 	align-items: center;
 	justify-content: space-between;
 }
-#gallery-top {
-	margin-right: -10px;
-	margin-bottom: 10px;
-}
 #gallery-bottom {
-	margin-left:-10px;
+	margin-top: 10px;
+	margin-left: -20px;
 }
 .big-img {
 	width: 100%;
@@ -190,12 +191,11 @@ header .cart #cart-item-count {
 	height: auto;
 	position: relative;
 }
-#gallery-img-one, #gallery-img-two {
-	margin-right: 10px;
+
+#gallery-img-two, #gallery-img-five {
+	margin: 0 10px;
 }
-#gallery-img-five, #gallery-img-six {
-	margin-left: 10px;
-}
+
 #gallery-img-two,#gallery-img-three, #gallery-img-four, #gallery-img-five {
 	width: 25%;
 	height: auto;
@@ -277,7 +277,7 @@ header .cart #cart-item-count {
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	max-width: 50%;
+	max-width: 80%;
 }
 
 #contact-section .multi-font-title {
@@ -297,7 +297,7 @@ header .cart #cart-item-count {
 
 }
 #form-container {
-	max-width: 80%;
+	max-width: 70%;
 	text-align: center;
 	margin: 0 auto;
 }

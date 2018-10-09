@@ -7,10 +7,10 @@ $(document).ready(function(){
 
 function incrementCart() {
 	var cartCountElem = document.getElementById('cart-item-count');
-	console.log(cartCountElem);
-	var currentCount = parseInt(cartCountElem[0].innerHTML);
-	console.log(cartCountElem.innerHTML);
-	console.log(currentCount);
-	var newCount = currentCount++;
-	cartCountElem.innerHTML = newCount;
+	var currentCount = parseInt(cartCountElem.innerHTML);
+	if (currentCount == 0) {
+		cartCountElem.style.display = "flex";
+	}
+	currentCount++;
+	cartCountElem.innerHTML = currentCount;
 }
