@@ -92,7 +92,7 @@ header .cart #cart-item-count {
 	background-image: url("../images/flower-bkgd.jpg");
 	background-size: contain;
 	background-repeat-y: no-repeat;
-	max-height: 775px;
+	max-height: 450px;
 	overflow: hidden;
 	text-align: center;
 	color: white;
@@ -101,6 +101,7 @@ header .cart #cart-item-count {
 
 #collection-banner img {
 	padding-top: 45px;
+	height: 120%;
 }
 
 .banner-text {
@@ -121,7 +122,7 @@ header .cart #cart-item-count {
 }
 
 .banner-text-bottom {
-	font-size: 80px;
+	font-size: 3.5em;
 	padding-top: 30px;
 }
 
@@ -152,12 +153,12 @@ header .cart #cart-item-count {
 
 /* Styles for title with two different fonts */
 .multi-font-title span:first-child {
-	font-size: 50px;
+	font-size: 3em;
 	font-family: "playfairDisplayItalic";
 	padding-right: 20px;
 }
 .multi-font-title span:last-child {
-	font-size: 50px;
+	font-size: 3em;
 	font-family: "playfairDisplayBold";
 }
 
@@ -265,11 +266,12 @@ header .cart #cart-item-count {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 500px;
+	height: 80vh;
 	background-image: url("../images/wave-bkgd.jpg");
 	background-position: center bottom;
 	background-size: cover;
 	text-align: center;
+	max-height: 500px;
 }
 #contact-section {
 	top: 50%;
@@ -310,6 +312,11 @@ header .cart #cart-item-count {
 	border: 0px;
 	font-family: "ralewayLight";
 }
+
+#form-container input[type=email]:focus {
+	outline: none;
+}
+
 
 #form-container input[type=submit]{
 	position: absolute;
