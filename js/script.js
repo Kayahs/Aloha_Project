@@ -1,7 +1,8 @@
-$(document).ready(function(){
+ $(document).ready(function(){
 	$('.main-carousel').flickity({
 		cellAlign:"left",
-		prevNextButtons: false
+		prevNextButtons: false,
+		wrapAround: "true"
 	});
 
 	$('.carousel-add-to-cart').on('click', () => {

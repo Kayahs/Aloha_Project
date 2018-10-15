@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* Font Declarations */
 @font-face {
 	font-family: "playfairDisplayBold";
@@ -51,11 +100,13 @@ header{
 	z-index: 100;
 	background-color: white;
 }
+header ul li a {
+	color: red;
+	font-family: "ralewayMedium";
+	text-decoration: none;
+}
 header ul {
 	list-style: none;
-}
-header .nav {
-	transform: translateX(-18%);
 }
 header .nav ul {
 	padding-left: 0px;
@@ -121,7 +172,7 @@ header .cart #cart-item-count {
 	font-size: 30px;
 }
 
-.banner-text-bottom {
+.banner-text-bottom { 
 	font-size: 3.5em;
 	padding-top: 30px;
 }
@@ -373,4 +424,44 @@ footer .footer-left .contact-info a {
 
 footer .footer-left .address {
 	color: #696969;
+}
+
+/*Desktop Responsive Styles*/
+@media screen and (min-width: 1240px) {
+	header .nav {
+		transform: translateX(-18%);
+}
+}
+
+/*Tablet Responsive Styles*/
+@media screen and (max-width: 1239px) {
+	.carousel-cell {
+		width: 50%;
+	}
+	header {
+		flex-wrap: wrap;
+	}
+	header .nav:before {
+		content: "";
+	}
+	header .nav {
+		flex-grow: 0;
+		flex-shrink: 0;
+		order: 1;
+		width: 50%;
+	}
+	header .logo {
+		width: 50%;
+	}
+	header .cart {
+		text-align: right;
+		width: 50%;
+	}
+}
+
+/*Mobile Responsive Styles*/
+@media screen and (max-width: 599px) {
+	.carousel-cell {
+		width: 100%;
+	}
 }
