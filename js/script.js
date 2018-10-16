@@ -30,7 +30,7 @@ function validateEmail(email) {
 
 
 function smoothScrollTo(targetID) {
-	var headerOffset = 114;
+	var headerOffset = $('#mainHeader').outerHeight();
 	var elementPosition = $(targetID).offset().top;
 	var offsetPosition = elementPosition - headerOffset;
 	window.scrollTo({
